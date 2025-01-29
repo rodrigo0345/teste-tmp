@@ -15233,18 +15233,72 @@ CSS Importante Para Area Pessoal
             </div>
 
             <script>
-                    function check() {
-                        var enableCertificate = localStorage.getItem("enableCertificate");
-                        console.log({enableCertificate})
-                        if (enableCertificate === "true") {
-                            var successMessage = document.getElementsByClassName("successMessage");
-                            for (var i = 0; i < successMessage.length; i++) {
-                                successMessage[i].style.display = "block";
-                            }
+
+                function updateHour() {
+                    var date = new Date();
+                    var hours = date.getHours();
+                    var minutes = date.getMinutes();
+                    var seconds = date.getSeconds();
+                    var str = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + " " + (hours < 10 ? "0" + hours : hours) + ":" + (minutes < 10 ? "0" + minutes : minutes) + ":" + (seconds < 10 ? "0" + seconds : seconds);
+                    document.getElementById("ContentPlaceHolderMain_LblCurrentDateTime").innerText = str;
+                }
+                updateHour()
+                function check() {
+                    var enableCertificate = localStorage.getItem("enableCertificate");
+                    console.log({ enableCertificate })
+                    if (enableCertificate === "true") {
+                        var successMessage = document.getElementsByClassName("successMessage");
+                        for (var i = 0; i < successMessage.length; i++) {
+                            successMessage[i].style.display = "block";
                         }
+                    } else {
+                        var certificateSection = document.getElementById("certificateSection");
+                        certificateSection.style.display = "none";
+                        const notFound = document.getElementById("notFound")
+                        notFound.style.display = "block"
                     }
-                    check()
+                }
+                check()
+
+                function closeDialog(event) {
+                    event.preventDefault()
+                    const notFound = document.getElementById("notFound")
+                    notFound.style.display = "none"
+                }
             </script>
+
+
+            <div id="notFound" style="display: block; z-index: 1002; outline: 0px; position: absolute; height: auto; width: 300px; top: 416.5px; left: 781.5px;"
+                class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-resizable" tabindex="-1" role="dialog"
+                aria-labelledby="ui-dialog-title-ContentPlaceHolderMain_MsgBoxInfo">
+                <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span
+                        class="ui-dialog-title" id="ui-dialog-title-ContentPlaceHolderMain_MsgBoxInfo">Validação de
+                        Certidões</span><a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span
+                            class="ui-icon ui-icon-closethick">close</span></a></div>
+                <div id="ContentPlaceHolderMain_MsgBoxInfo"
+                    style="display: block; width: auto; min-height: 0px; height: 59.8px;"
+                    class="ui-dialog-content ui-widget-content" scrolltop="0" scrollleft="0">
+                    <div id="euipp_web_portal_webcontrols_messagebox_text_ContentPlaceHolderMain_MsgBoxInfo"
+                        class="euipp_wp_wc_mb_text" style="display: inline;">Insira o Código da Certidão!</div>
+                    <div id="euipp_web_portal_webcontrols_messagebox_image_ContentPlaceHolderMain_MsgBoxInfo"
+                        class="euipp_wp_wc_mb_image" style="display:inline"> <span class="ui-icon ui-icon-info"
+                            style="float:left;"></span> </div>
+                </div>
+                <div class="ui-resizable-handle ui-resizable-n"></div>
+                <div class="ui-resizable-handle ui-resizable-e"></div>
+                <div class="ui-resizable-handle ui-resizable-s"></div>
+                <div class="ui-resizable-handle ui-resizable-w"></div>
+                <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se"
+                    style="z-index: 1001;"></div>
+                <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1002;"></div>
+                <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1003;"></div>
+                <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1004;"></div>
+                <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
+                    <div class="ui-dialog-buttonset"><button onclick="closeDialog(event)" type="button"
+                            class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"
+                            aria-disabled="false"><span class="ui-button-text">Ok</span></button></div>
+                </div>
+            </div>
 
 
         </div>
