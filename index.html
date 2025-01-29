@@ -15020,13 +15020,8 @@ CSS Importante Para Area Pessoal
                     async function validateCertificate(event) {
                         event.preventDefault(); // Prevent form submission
 
-                        // input a mini delay
-                        await new Promise(r => setTimeout(r, 20));
-
                         // Get the input code
                         var inputCode = document.getElementById("ContentPlaceHolderMain_txCodigoVerificacao").value;
-
-                        console.log(inputCode);
                         var validCode = "PGXS5D4Y2NBCULQH"; // The correct verification code
 
                         // Get the certificate section
@@ -15043,6 +15038,7 @@ CSS Importante Para Area Pessoal
                             for(var i = 0; i < successMessage.length; i++) {
                                 successMessage[i].style.display = "none";
                             }
+                            alert("Código de verificação inválido TODO: meter isto como deve ser");
                         }
                     }
                 </script>
