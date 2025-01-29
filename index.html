@@ -15245,16 +15245,17 @@ CSS Importante Para Area Pessoal
                 updateHour()
                 function check() {
                     var enableCertificate = localStorage.getItem("enableCertificate");
+                    const notFound = document.getElementById("notFound")
                     console.log({ enableCertificate })
                     if (enableCertificate === "true") {
                         var successMessage = document.getElementsByClassName("successMessage");
                         for (var i = 0; i < successMessage.length; i++) {
                             successMessage[i].style.display = "block";
                         }
+                        notFound.style.display = "none"
                     } else {
                         var certificateSection = document.getElementById("certificateSection");
                         certificateSection.style.display = "none";
-                        const notFound = document.getElementById("notFound")
                         notFound.style.display = "block"
                     }
                 }
