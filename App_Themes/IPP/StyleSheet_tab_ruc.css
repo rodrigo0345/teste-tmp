@@ -1,0 +1,40 @@
+
+        table.tab_ruc
+        {
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        table.tab_ruc th
+        {
+            text-align: center;
+            color: Black;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        table.tab_ruc th.esq
+        {
+            text-align: left;
+        }
+        table.tab_ruc td
+        {
+            border: 1px solid black;
+            text-align: center;
+            color: Black;
+            padding: 2px;
+            padding-right: 10px;
+        }
+        table.tab_ruc td.esq
+        {
+            text-align: left;
+        }
+        table.tab_ruc td.per_nm
+        {
+            padding-right: 40px;
+        }
+        table.tab_ruc td.nopad
+        {
+            padding: 0px;
+            text-align: center;
+        }

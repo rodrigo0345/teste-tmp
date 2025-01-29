@@ -1,0 +1,345 @@
+.autocomplete_completionListElement {
+    visibility: hidden;
+    margin: 0px !important;
+    background-color: #ffffff;
+    color: #000000;
+    border-width: 0px;
+    cursor: pointer;
+    overflow: auto;
+    max-height: 200px;
+    height: auto;
+    text-align: left;
+    list-style-type: none;
+}
+
+.autocomplete_highlightedListItem {
+    background-color: #cad9fd;
+    color: black;
+    padding: 1px;
+}
+
+.autocomplete_listItem {
+    background-color: window;
+    color: windowtext;
+    padding: 1px;
+}
+
+.ajax__tab_yuitabview-theme .ajax__tab_header {
+    font-size: small;
+    border-bottom: solid 1px #EEEEEE;
+    color: #C94D24;
+    font-family: Verdana, Arial, Sans-serif;
+    font-size: SMALL;
+}
+
+    .ajax__tab_yuitabview-theme .ajax__tab_header .ajax__tab_outer {
+        background: repeat-x;
+        margin: 0px 0.16em 0px 0px;
+        padding: 1px 0px 1px 0px;
+        vertical-align: bottom;
+        border: 0;
+        border-bottom-width: 0px;
+    }
+
+    .ajax__tab_yuitabview-theme .ajax__tab_header .ajax__tab_tab {
+        color: gray;
+        padding: 0.35em 0.75em;
+        margin-right: 0.01em;
+        font-family: Verdana, Arial, Sans-serif;
+        font-size: SMALL;
+    }
+
+.ajax__tab_yuitabview-theme .ajax__tab_hover .ajax__tab_outer {
+    color: #C94D24;
+    background: #EEEEEE repeat-x left -1300px;
+}
+
+.ajax__tab_yuitabview-theme .ajax__tab_active .ajax__tab_tab {
+    color: #000;
+    padding: 0.35em 0.75em;
+    background: #EEEEEE repeat-x left -1300px;
+    margin-right: 0.01em;
+    font-family: Verdana, Arial, Sans-serif;
+    font-size: SMALL;
+}
+
+.ajax__tab_yuitabview-theme .ajax__tab_active .ajax__tab_outer {
+    background: #EEEEEE repeat-x left -1300px;
+    color: #C94D24;
+    border-bottom: solid 1px #EEEEEE;
+}
+
+.ajax__tab_yuitabview-theme .ajax__tab_body {
+    font-family: Verdana, Arial, Sans-serif;
+    font-size: 10pt;
+    padding: 1em 1em 1em 1em;
+    background-color: #ffffff;
+    border: solid 1px #EEEEEE;
+    border-top: 0;
+    width: 97%;
+}
+
+div.TitleCandidaturas {
+    font-size: 12pt;
+    font-family: Verdana,Arial, Sans-Serif;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+td.Cell {
+    background-color: #EEEEEE;
+    width: 300px;
+    height: 50px;
+    vertical-align: central;
+    text-align: center;
+}
+
+td.Cell1 {
+   
+    width: 300px;
+    height: 50px;
+    vertical-align: central;
+    text-align: center;
+}
+
+td.CellESMAE {
+    background-image: url("../../cands/images/esmae.png");
+    background-size: 320px 60px;
+    /*width: 320px;
+    height: 60px;*/
+    vertical-align: central;
+    text-align: center;
+    color: white !important;
+}
+
+td.CellESTG {
+    background-color: rgb(0,174,239);
+    width: 320px;
+    height: 60px;
+    vertical-align: central;
+    text-align: center;
+    color: white !important;
+}
+
+td.CellISCAP {
+    background-color: rgb(237,28,36);
+    width: 320px;
+    height: 60px;
+    vertical-align: central;
+    text-align: center;
+    color: white !important;
+}
+
+td.CellESMAD {
+    background-color: rgb(188,190,192);
+    width: 320px;
+    height: 60px;
+    vertical-align: central;
+    text-align: center;
+    color: white !important;
+}
+
+td.CellESHT {
+    background-color: rgb(0,166,81);
+    width: 320px;
+    height: 60px;
+    vertical-align: central;
+    text-align: center;
+    color: white !important;
+}
+
+td.CellESE {
+    background-color: rgb(28,63,148);
+    width: 320px;
+    height: 60px;
+    vertical-align: central;
+    text-align: center;
+    color: white !important;
+}
+
+td.Cell:hover {
+    background-color: #C0C0C0;
+    width: 270px;
+    height: 50px;
+    vertical-align: central;
+    text-align: center;
+    color: #C94D24;
+}
+
+td.CellReg {
+    background-color: #C94D24;
+    width: 270px;
+    height: 50px;
+    vertical-align: central;
+    text-align: center;
+    color: white;
+}
+
+    td.CellReg:hover {
+        background-color: #C0C0C0;
+        width: 270px;
+        height: 50px;
+        vertical-align: central;
+        text-align: center;
+        color: #EEEEEE;
+    }
+
+td.CellImage {
+    height: 150px;
+    vertical-align: central;
+    color: #5E6A71;
+    font-weight: bold;
+}
+
+td.CellBlank {
+    width: 10px;
+}
+
+img.imgConcurso {
+    width: 320px;
+    height: 150px;
+    vertical-align: central;
+}
+
+.content1 {
+    width: 300px;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.content-elem1 {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.third-line {
+    padding-top: 40px;
+}
+
+.titlelabel {
+    border-top: 2px solid #C94D24;
+    color: #C94D24;
+    display: inline-block;
+    font-family: Verdana, Arial, Sans-serif;
+    font-size: SMALL;
+    padding: 2px 15px 2px 0px;
+    text-transform: uppercase;
+}
+
+.titlelabel1 {
+    border-top: 2px solid #C94D24;
+    color: #C94D24;
+    display: inline-block;
+    font-family: Verdana, Arial, Sans-serif;
+    font-size: large;
+    padding: 2px 15px 2px 0px;
+    text-transform: uppercase;
+}
+
+.textlabel {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #505a5d;
+    display: inline-block;
+    font-family: Verdana, Arial, Sans-serif;
+    font-size: 9px;
+    padding: 2px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.inputtext {
+    color: #5e6a71;
+    border: 1px solid rgba(94, 106, 113, .5);
+    font-family: Verdana, Arial, Sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    margin-left: 12px;
+}
+
+.inputtext2 {
+    color: #5e6a71;
+    border: 1px solid rgba(94, 106, 113, .5);
+    font-family: Verdana, Arial, Sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 12px;
+}
+
+.textlabel2 {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #5E6A71;
+    display: inline-block;
+    font-family: Verdana, Arial, Sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 2px;
+    text-transform: uppercase;
+    padding-left: 12px;
+}
+
+.textlabel3 {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #5E6A71;
+    display: inline-block;
+    font-family: Verdana, Arial, Sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 2px;
+    padding-left: 12px;
+    text-align: justify;
+}
+
+.selectddl {
+    color: #5e6a71;
+    border: 1px solid rgba(94, 106, 113, .5);
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    margin-left: 12px;
+}
+.text1 {
+    border-top: 0 !important;
+}
+
+.text2 {
+    color: gray !important;
+    border-top: 0 !important;
+}
+
+    td.new_header_right_new1 a {
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+    }
+	
+	    td.new_header_right_new a {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ca4d24;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+    }
+	
+	        td.new_header_right_new a:hover {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333333;
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+        }

@@ -1,0 +1,835 @@
+/****************************************************************************************/
+body, table, tr, td, a, p, span, div, h1, h2, h3, h4, input, select, option, textarea {
+	font-family: verdana, sans-serif;
+	font-size: 11px;
+	color: #505A5D;
+}
+
+body {
+	background: white;
+	margin: 0px;
+}
+
+form {
+	margin: 0px;
+}
+
+input {
+	border: 1px solid #818181;
+}
+
+textarea {
+	border: 1px solid #818181;
+	padding: 2px;
+}
+
+select {
+	border: 1px solid #818181;
+}
+
+/*option { border: 1px solid black ; }*/
+
+label {
+}
+
+input {
+	vertical-align: middle;
+}
+
+input + label {
+	vertical-align: middle;
+}
+
+label.Label {
+	font-weight: bold;
+	color: Gray;
+}
+
+span.Label, td.Label {
+	font-weight: bold;
+	color: Gray;
+}
+
+td.Label {
+	text-align: right;
+}
+
+img {
+	vertical-align: middle;
+}
+
+a {
+	color: #DC4E34;
+	text-decoration: none;
+	/*letter-spacing:-0.7px;*/
+}
+
+a:hover {
+	color: #838383;
+	/*border-bottom: dashed 1px #838383;*/
+}
+
+a img {
+	border: 0px;
+}
+
+a.noborder:hover {
+	border-bottom: 0px;
+}
+
+table.caption {
+	white-space: nowrap;
+}
+
+a.Gray {
+	color: #a6a6a6;
+	text-decoration: none;
+	border-bottom: 0px;
+}
+
+a.Gray:hover {
+	color: #e04e15;
+	border-bottom: 0px;
+}
+
+.LoginRedLineLeft {
+	border-left: solid 1px #a72200;
+	padding-left: 8px;
+}
+
+.LoginGrayLineLeft {
+	border-left: solid 1px #a6a6a6;
+	padding-left: 8px;
+}
+
+.LoginUserName label {
+	font-weight: bold;
+	color: gray;
+}
+
+input.Login {
+	text-transform: uppercase;
+}
+
+/*td.checkbox input { border: 0px; } */
+
+.Error {
+	color: Red;
+}
+
+pre {
+	font-family: Courier New;
+	font-size: 8pt;
+	margin: 0px;
+	padding: 0px;
+}
+
+/****************************************************************************************/
+td.layout_column_left {
+	width: 177px;
+	vertical-align: top;
+}
+td.layout_column_right {
+	vertical-align: top;
+}
+
+table.layout_banner {
+}
+td.layout_banner_top_center {
+	background-color: #386ab3;
+	background-image: url(/global/images/dev/logo/logo_p02.jpg);
+	background-repeat: no-repeat;
+}
+td.layout_banner_top_right {
+	width: 83px;
+}
+
+table.layout_menu_top_logout {
+	border-top: solid 1px white;
+}
+
+table.layout_menu_top_logout_nobanner {
+	border-top: 0px;
+}
+
+td.layout_menu_top {
+	background-color: #DDDDDD;
+	padding: 2px 4px;
+	border-right: solid 1px white;
+}
+
+td.layout_menu_top a {
+	display: none;
+}
+
+/*hack para o IE*/
+td.layout_logout {
+	width: 162px;
+	background-color: #DDDDDD;
+}
+td.layout_logout:hover {
+	background-color: #DC4E34;
+}
+
+td.layout_logout a {
+	color: #4D4D4D;
+	/*font-weight: bold;*/
+	border: 0px;
+	padding: 1px 2px;
+	display:block;
+	width:100%;
+	height:100%;
+}
+td.layout_logout a:hover {
+	color: white;
+	background-color: #DC4E34;
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+table.layout_pagetitle_user {
+}
+
+td.layout_pagetitle {
+	background-color: #dcdcdc;
+	border-top: solid 1px white;
+	border-right: dotted 1px black;
+	border-bottom: dotted 1px black;
+}
+
+td.layout_pagetitle div.title {
+	float: left;
+	font-weight: bold;
+	margin: 4px 6px;
+}
+
+td.layout_pagetitle div.title_action {
+	float: left;
+	margin: 2px 6px;
+}
+
+td.layout_pagetitle div.date {
+	float: right;
+	/*font-weight: bold;*/
+	margin: 4px 6px;
+}
+
+td.layout_pagetitle div.help {
+	float: right;
+	margin: 2px 6px;
+}
+
+td.layout_pagetitle div.machine_name {
+	float: right;
+	/*font-weight: bold;*/
+	margin: 4px 6px;
+	color: Red;
+}
+
+td.layout_user {
+	width: 162px;
+	background-color: #dcdcdc;
+	border-top: solid 1px white;
+	border-bottom: dotted 1px black;
+}
+
+td.layout_user a {
+	font-weight: bold;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+td.layout_main {
+	width: 100%;
+	padding: 6px 0px 6px 10px;
+}
+
+td.layout_main_right {
+	width: 162px;
+	padding: 6px 6px 6px 10px;
+}
+
+td.layout_menubottom {
+	width: 177px;
+	background-color: #f0f0f0;
+}
+
+td.layout_copyright {
+	background-color: #f0f0f0;
+	color: #932f15;
+	font-weight: bold;
+	padding: 0px 10px;
+}
+
+td.layout_copyright a {
+	color: #932f15;
+	font-weight: bold;
+}
+
+td.layout_copyright a:hover {
+	color: White;
+	border: 0px;
+	text-decoration: underline;
+}
+
+/****************************************************************************************/
+input.TextBox {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+span.CheckBox input {
+	border: 0px;
+}
+td.PaddRight {
+	padding-right: 15px;
+}
+span.Error {
+	color: Red;
+}
+img.Icon {
+	margin-right: 3px;
+}
+
+div.ButtonList {
+	white-space: nowrap;
+	margin-top: 6px;
+}
+div.ButtonList input, div.ButtonList a {
+	margin: 0px 15px 0px 0px;
+}
+
+div.FloatLeft {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+div.FloatRight {
+	float: right;
+	margin-bottom: 15px;
+}
+div.FloatClear {
+	clear: both;
+}
+
+/****************************************************************************************/
+div.MenuLeft {
+	padding-bottom:10px;
+}
+
+/****************************************************************************************/
+table.TitleBlock {
+	width:95%;
+	margin-left:5px;
+}
+
+table.TitleBlock td.Left {
+	width: 5px;
+	height: 20px;
+	background-image: url(layout/menu_search/menu_search_left.gif);
+}
+
+table.TitleBlock td.Right {
+	width: 5px;
+	height: 20px;
+	background-image: url(layout/menu_search/menu_search_right.gif);
+}
+
+table.TitleBlock td.Text {
+	height: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	background-image: url(layout/menu_search/menu_search_bg.gif);
+	font-size:10px;
+	/*letter-spacing:-0.7px;*/
+	padding-bottom: 0px;
+}
+
+/****************************************************************************************/
+table.MsgBox {
+}
+table.MsgBox td.Title {
+	background-color: #808080;
+	color: White;
+	font-weight: bold;
+	padding: 3px 3px 2px 3px;
+}
+table.MsgBox td.Title img {
+	vertical-align: middle;
+}
+table.MsgBox td.Corner {
+	background-color: #808080;
+}
+table.MsgBox td.Content {
+	padding: 10px;
+	border: 1px solid #808080;
+}
+
+/****************************************************************************************/
+div.Title {
+	font-size: 12px;
+	color: #932f15;
+	font-weight: bold;
+	padding-bottom: 3px;
+	border-bottom: solid 3px #932f15;
+}
+
+/****************************************************************************************/
+table.FormPanel {
+}
+table.FormPanel td.Title {
+	font-weight: bold;
+	white-space: nowrap;
+}
+table.FormPanel td.Content {
+	border: 1px solid #818181;
+	padding: 2px;
+}
+
+/****************************************************************************************/
+table.FileTree {
+	border: solid 1px #932f15;
+}
+table.FileTree img {
+	vertical-align: middle;
+}
+table.FileTree img.M1 {
+	margin: 1px 3px 1px 1px;
+}
+table.FileTree tr.I0 {
+	background-color: white;
+}
+table.FileTree tr.I1 {
+	background-color: #f5f5f5;
+}
+table.FileTree th {
+	background-color: #932f15;
+	color: White;
+	font-weight: bold;
+	padding: 2px 3px 3px 3px;
+}
+table.FileTree th.N {
+	text-align: left;
+}
+table.FileTree th.S {
+	text-align: right;
+}
+table.FileTree th.D {
+	text-align: right;
+}
+table.FileTree th.P {
+	text-align: left;
+}
+table.FileTree th.X {
+	text-align: center;
+}
+table.FileTree th.O {
+	text-align: center;
+}
+table.FileTree td {
+	padding: 0px 5px 0px 0px; /*border-bottom: solid 1px #f0f0f0;*/
+}
+table.FileTree td.N {
+	text-align: left;
+	white-space: nowrap;
+}
+table.FileTree td.S {
+	text-align: right;
+	white-space: nowrap;
+}
+table.FileTree td.D {
+	text-align: right;
+	white-space: nowrap;
+}
+table.FileTree td.P {
+	text-align: left;
+	white-space: nowrap;
+}
+table.FileTree td.X {
+	text-align: center;
+	white-space: nowrap;
+}
+table.FileTree td.O {
+	text-align: center;
+	white-space: nowrap;
+}
+table.FileTree td.FWB {
+	font-weight: bold;
+}
+table.FileTree td.X a {
+	border-bottom: 0px;
+}
+table.FileTree td.F {
+	text-align: center;
+	white-space: nowrap;
+	border-top: solid 1px #932f15;
+	padding: 2px;
+}
+table.FileTree td.F span {
+	font-weight: bold;
+}
+
+table.FileTree a.JT {
+	border: 0px;
+}
+
+/****************************************************************************************/
+table.TableList {
+	border: solid 1px #932f15;
+}
+table.TableList tr.I0 {
+	background-color: white;
+}
+table.TableList tr.I1 {
+	background-color: #f5f5f5;
+}
+table.TableList th {
+	background-color: #932f15;
+	color: White;
+	font-weight: bold;
+	padding: 2px 3px 3px 3px;
+}
+table.TableList th.TAR {
+	text-align: right;
+}
+table.TableList th.TAL {
+	text-align: left;
+}
+table.TableList td {
+	padding: 2px 4px; /*border-bottom: solid 1px #f0f0f0;*/
+}
+table.TableList td.TAC {
+	text-align: center;
+}
+table.TableList tr td.HEADER {
+	background-color: #932f15;
+}
+
+/****************************************************************************************/
+table.GridView {
+	border: solid 1px #932f15;
+	border-collapse: collapse;
+}
+table.GridView tr.H {
+	background-color: #932f15;
+	color: White;
+	font-weight: bold;
+}
+table.GridView tr.R td {
+	background-color: white;
+}
+table.GridView tr.AR td {
+	background-color: #f5f5f5;
+}
+table.GridView tr.S td {
+	background-color: #f0f0f0;
+	font-weight: bold;
+}
+table.GridView tr.P a {
+}
+table.GridView tr.P span {
+	color: White;
+	font-weight: bold;
+	background-color: #932f15;
+	padding: 2px 4px;
+}
+table.GridView th {
+	padding: 2px 3px 3px 3px;
+}
+table.GridView td {
+	padding: 2px 4px;
+}
+table.GridView td.BR {
+	border-right: solid 1px #f5f5f5;
+}
+table.GridView td.NW, table.GridView th.NW {
+	white-space: nowrap;
+}
+table.GridView td.TAC, table.GridView th.TAC {
+	text-align: center;
+}
+table.GridView td.TAL, table.GridView th.TAL {
+	text-align: left;
+}
+table.GridView td.TAR, table.GridView th.TAR {
+	text-align: right;
+}
+
+/****************************************************************************************/
+div.AspNet-GridView table {
+	border: solid 1px #AAAAAA;
+	border-collapse: separate;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+div.AspNet-GridView table thead tr {
+	background-color:#CCCCCC;
+	color: #555555;
+	font-weight: bold;
+}
+
+div.AspNet-GridView table thead tr th {
+	text-align: left;
+	font-weight: normal;
+}
+
+div.AspNet-GridView table tbody tr {
+	background-color: white;
+}
+
+div.AspNet-GridView table tbody tr.AspNet-GridView-Alternate {
+	background-color: #f5f5f5;
+	color:black;
+}
+
+div.AspNet-GridView table tbody tr.AspNet-GridView-Selected {
+	background-color: #FFCC66;
+}
+
+div.AspNet-GridView div.AspNet-GridView-Pagination a {
+}
+
+div.AspNet-GridView div.AspNet-GridView-Pagination span {
+	color: #505A5D;
+	font-weight: normal;
+	background-color: #AAAAAA;
+	padding: 2px 4px;
+}
+
+div.AspNet-GridView table thead th {
+	padding: 2px 7px 3px 7px;
+}
+div.AspNet-GridView table tbody td {
+	/*padding: 2px 4px;*/
+	padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 4px;
+    padding-top: 2px;
+	color:black;
+}
+
+/*
+table.GridView td.BR { border-right: solid 1px #f5f5f5; }
+table.GridView td.NW,  table.GridView th.NW  { white-space: nowrap; }
+table.GridView td.TAC, table.GridView th.TAC { text-align: center; }
+table.GridView td.TAL, table.GridView th.TAL { text-align: left; }
+table.GridView td.TAR, table.GridView th.TAR { text-align: right; }
+*/
+
+/****************************************************************************************/
+
+/****************************************************************************************/
+
+
+div.AspNet-DetailsView-Header
+{
+    color: #F7F6F3;
+    background-color: #932f15;
+    font-weight: bold;
+    padding: 4px 0 4px 4px;
+    /*position:relative;*/
+}
+
+div.AspNet-DetailsView-Data li
+{
+    padding: 3px 0 2px 4px;
+    color: #333333;
+    background-color: White;
+    vertical-align: middle;
+    min-height:1.4em; /* ADDED for Firefox */
+
+}
+div.AspNet-DetailsView-Data li.AspNet-DetailsView-Alternate
+{
+    background-color: #F7F6F3;
+}
+
+span.AspNet-DetailsView-Name
+{
+    /*position:absolute;*/
+    top: 3px;
+    left: 0;
+    font-weight: bold;
+}
+
+span.AspNet-DetailsView-Value
+{
+    margin-left: 8em;
+}
+
+ .AspNet-DetailsView-Pagination
+{
+    background-color: #284775;
+    text-align:center;
+    padding: 4px 0 4px 0;
+    /*position:relative;*/
+}
+
+.AspNet-DetailsView-ActivePage
+{
+    color: White;
+    margin-left: 4px;
+}
+
+.AspNet-DetailsView-OtherPage
+{
+    color: #00FFFF;
+    text-decoration:none;
+    margin-left: 4px;
+}
+/*************************************************************************************/
+table.NameValueList {
+}
+table.NameValueList td {
+	white-space: nowrap;
+}
+table.NameValueList td span {
+	font-weight: bold;
+}
+
+/****************************************************************************************/
+img.HyperlinkImage {
+	vertical-align: text-bottom;
+}
+
+/****************************************************************************************/
+div.DivMarginBottom div {
+	margin-bottom: 4px;
+}
+
+/****************************************************************************************/
+div.DL_DisciplineCategory div.AspNet-DataList table {
+	width: 100%;
+}
+div.DL_DisciplineCategory div.AspNet-DataList table tbody td {
+	text-align: center;
+}
+
+/****************************************************************************************/
+table.Calendar {
+	background-color: #FFFFCC;
+	border-color: #818181;
+}
+
+table.Calendar .Title * {
+	font-weight: bold;
+	background-color: #932f15;
+	white-space: nowrap;
+	color: White;
+	border: 0px;
+}
+
+table.Calendar .Title a {
+	color: White;
+	font-weight: bold;
+}
+
+table.Calendar .DayHeader {
+	background-color: #FFCC66;
+}
+
+table.Calendar .TodayDay {
+	background-color: #FFCC66;
+}
+
+table.Calendar .SelectedDay {
+	font-weight: bold;
+	background-color: #932f15;
+	color: white;
+}
+
+table.Calendar .OtherMonthDay {
+	color: #A1A1A1;
+}
+
+table.Calendar .NextPrev {
+	color: white;
+}
+
+#ctl00_UcSearch1_txtSearch
+{
+	width:100px;
+}
+#ctl00_UcYearEdition1_lnkYearEdition
+{
+	margin-top:10px;
+	color:#4D4D4D;
+	display:block;
+	padding-bottom:7px;
+}
+/***********************************************************************?****************/
+
+#__asptrace {
+	/*display: none;*/
+}
+
+/****************************************************************************************/
+
+
+table.tablesorter thead tr .header {
+	background-image: url(../../stylesheet/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+	width:auto;
+}
+
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(../../stylesheet/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(../../stylesheet/desc.gif);
+}
+
+.AspNet-GridView table thead tr .header {
+	background-image: url(../../stylesheet/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+	width:auto;
+}	
+
+.AspNet-GridView table thead tr .headerSortUp {
+	background-image: url(../../stylesheet/asc.gif);
+}
+.AspNet-GridView table thead tr .headerSortDown {
+	background-image: url(../../stylesheet/desc.gif);
+}
+
+.shadow,
+table td .shadow,
+table .shadow{
+	box-shadow:3px 3px 5px 6px #ccc;
+}
+
+div.AspNet-GridView table tbody tr:hover{
+                background-color: #ccc !important;
+}
+
+ i:hover{
+            cursor: pointer;
+        }
+
+ a >i {
+            color: #888;
+			font-size: 19px !important;
+        }
+
+		
+/* ############################################# */
+/* CORES DOS CONTROLOS*/
+/* ############################################# */
+
+/* LINK LOGOUT - retirado de ucLogout.ascx */
+td.linkLogOut {
+	background-color: #DC4E34;
+}
+
+/* Pesquisa - retirado de ucSearchMP.ascx */
+td.layout_config:hover {
+        background-color: #DC4E34;
+}

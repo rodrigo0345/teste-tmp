@@ -1,0 +1,79 @@
+/****************************************************************************************/
+
+.td
+{
+    background-color:#666666;
+    width:260px;
+    cursor:pointer;
+    color:#cccccc;
+    text-align:left;
+    padding-left:8px;
+  
+}
+
+.td:hover
+{
+    background-color:#707070;
+    color: #cccccc;
+    text-decoration:none;
+}
+
+.td a
+{
+    color: #cccccc;
+    font-size:14px;
+    text-decoration:none;
+}
+
+.td a:hover
+{
+    text-decoration: none;
+    color: #cccccc;
+    font-size:14px;
+    border-bottom: none 0px;
+}
+
+.tdFacebook:hover
+{
+    background-image:url('/app_themes/ipp/layout/redes_sociais/facebook1.png');
+    text-decoration:none;
+}
+
+.tdFacebook
+{
+    background-image:url('/app_themes/ipp/layout/redes_sociais/facebook.png');
+}
+
+.tdClaro a
+{
+    color: #666666;
+    font-size:14px;
+    text-decoration:none;
+}
+
+.tdClaro a:hover
+{
+    text-decoration:none;
+    color: #666666;
+    font-size:14px;
+    border-bottom: none 0px;
+}
+
+
+.tdClaro 
+{
+    background-color:#999999;
+    color:white;
+    width:260px;
+    cursor:pointer;
+    text-align:left;
+    padding-left:8px;
+    font-size:14px;
+}
+
+.tdClaro:hover
+{
+    background-color:#8f8f8f;
+    color: white;
+    text-decoration:none;
+}

@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><link type="text/css" rel="stylesheet" href="../stylesheet/chosen.min.css?v=16.03.01.00" /><title>
+	ISEP - Instituto Superior de Engenharia do Porto
+</title><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" /><link id="AdaptersInvariantImportCSS" rel="stylesheet" href="../stylesheet/Import.css?v=16.03.01.00" type="text/css" /><link type="text/css" rel="stylesheet" href="../stylesheet/font-awesome-5.15.4/css/all.css?v=21.11.01.01" /><link type="text/css" rel="stylesheet" href="../stylesheet/font-awesome/css/font-awesome.min.css?v=16.03.01.00" /><link type="text/css" rel="stylesheet" href="../stylesheet/showLoading.css?v=16.03.01.00" /><link type="text/css" rel="stylesheet" href="../stylesheet/chosen.min.css?v=16.03.01.00" />
+
+     <script type="text/javascript">
+         function getBaseURL() {
+             var url = location.href;  // entire url including querystring - also: window.location.href;
+             var baseURL = url.substring(0, url.indexOf('/', 14));
+
+             var pathname = location.pathname;  // window.location.pathname;
+             var index1 = url.indexOf(pathname);
+             var index2 = url.indexOf("/", index1 + 1);
+             var baseLocalUrl = url.substr(0, index2);
+
+             // Root Url for domain name
+             return baseLocalUrl + "/";
+         }
+
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/jquery-2.1.1.min.js"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/jquery-migrate-1.2.1.min.js"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/jquery-ui-1.11.2.min.js"><\/script>');
+
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/stylesheet/webcontrols/js/msgBox.jQuery.js?v=16.03.01.00"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/stylesheet/webcontrols/js/calendar.jQuery.js?v=16.03.01.00"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/stylesheet/webcontrols/js/menuLink.jQuery.js?v=16.03.01.00"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/stylesheet/webcontrols/js/menuSubmenus.jQuery.js?v=16.03.01.00"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/stylesheet/webcontrols/js/menuSearch.jQuery.js?v=16.03.01.00"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/cufon-yui.js?v=16.03.01.00"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/Aller.font.js?v=16.03.01.00"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/jquery.tablesorter.js?v=16.03.01.00"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/bootstrap-treeview.min.js?v=16.03.01.00"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/jquery.showLoading.min.js?v=16.03.01.00"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/chosen.jquery.min.js?v=16.03.01.00"><\/script> ');
+
+
+     </script>
+<script type="text/javascript" src="~/../../stylesheet/webcontrols/js/jquery-1.7.1.min.js"></script><script type="text/javascript" src="~/../../stylesheet/webcontrols/js/jquery-ui-1.8.17.custom.min.js"></script><script type="text/javascript" src="~/../../stylesheet/webcontrols/js/msgBox.jQuery.js"></script><script type="text/javascript" src="~/../../stylesheet/webcontrols/js/calendar.jQuery.js"></script><style type="text/css"> body { padding : 5px; } </style><link href="../App_Themes/IPP/Cores_Portal.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/IPP/StyleSheet.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/IPP/StyleSheet_MenuBottom.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/IPP/StyleSheet_MenuLeft.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/IPP/StyleSheet_MenuTop.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/IPP/StyleSheet_Print.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/IPP/StyleSheet_tab_ruc.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/IPP/StyleSheet_TreeView.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/IPP/StyleSheetCandidaturas.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/IPP/StyleSheetCandidaturasv1.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/IPP/zcustom_ISEP_v11.4.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/IPP/zjquery-ui.1.12.1.custom.min.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/IPP/zjquery-workaround_v2.css" type="text/css" rel="stylesheet" /></head>
+<body>
+	<form method="post" action="./verificar_certidao.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTc2NDUwNTMzNQ9kFgJmD2QWAgIDD2QWBAIBDw8WBB4IQ3NzQ2xhc3MFGlRleHRCb3ggVGV4dEJveCB0eHRQZXNxaXNhHgRfIVNCAgJkZAIDD2QWAgIDDxYCHgdWaXNpYmxlZxYOAgEPDxYCHgRUZXh0BRMyMDI1LTAxLTI5IDE5OjM3OjE5ZGQCAg8PFgIeCEltYWdlVXJsBWRodHRwczovL2RvbXVzLmlwcC5wdC9nbG9iYWwvaW1hZ2VzL2hvbWUvUGFnaW5hQ2VydGlkb2VzL2MyX3ByZXNpZMOqbmNpYV9kb19wb2xpdMOpY25pY29fZG9fcG9ydG8ucG5nZGQCAw8PFgIfBAVIaHR0cHM6Ly9kb211cy5pcHAucHQvZ2xvYmFsL2ltYWdlcy9ob21lL1BhZ2luYUNlcnRpZG9lcy9jM192YWxpZGFjYW8ucG5nZGQCBA9kFgJmD2QWAgIBD2QWAgIHDw8WAh8CZ2RkAgYPFgIfA2VkAgcPDxYCHwQFUGh0dHBzOi8vZG9tdXMuaXBwLnB0L2dsb2JhbC9pbWFnZXMvaG9tZS9QYWdpbmFDZXJ0aWRvZXMvYzRfYzNfYmFycmFfMDNfMjAwcHgucG5nZGQCCA8PFgIeC05hdmlnYXRlVXJsZWRkZLl63uaaVb9U6RVBE3LcVjYGvTdgejWlBVmcuXXxgqOJ" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/home/WebResource.axd?d=KTbuC8_74lTcPPCDzGEXG17csLM5wTUQsh2qTbfAWQBmKfe3L1aE_WEb7rX3DaQ4UOp3WF2vMUV0m7FxQQeg4_6THUyvyTyxdR-ZdUqmsok1&amp;t=638459824569584809" type="text/javascript"></script>
+
+
+<script src="/home/javascript/iefix.js" type="text/javascript"></script>
+<script src="/home/javascript/main.js?v=83507C01E72F164206BB06C5E55B55E4" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="32827A1A" />
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+</div>
+		<div>
+			<input name="ctl00$txtSearch" type="text" id="txtSearch" class="TextBox TextBox txtPesqisa" style="width: 96%;display:none" />
+			
+    
+
+    <div id="ContentPlaceHolderMain_divDomus">
+        <style type="text/css">
+            .a {
+                text-decoration: none;
+            }
+
+            .wht {
+                color: white;
+                font-weight: bold;
+            }
+
+            .form {
+                color: gray;
+                font-weight: bold;
+            }
+            /*.blk { border-color:black; }*/
+            .blu {
+                color: rgb(0, 51, 153);
+            }
+
+            td.border1_top_left {
+                text-align: center;
+                border-right: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+
+            td.border2 {
+                text-align: center;
+                border: 2px solid black;
+            }
+
+            td.border2_top {
+                text-align: center;
+                border-right: 2px solid black;
+                border-bottom: 2px solid black;
+                border-left: 2px solid black;
+            }
+
+            td.border2_left {
+                text-align: center;
+                border-top: 2px solid black;
+                border-right: 2px solid black;
+                border-bottom: 2px solid black;
+            }
+
+            td.border_gray {
+                border: 1px solid gray;
+                color: #932f15;
+            }
+        </style>
+
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td align="center">
+                        <table align="center" width="800px" style="height: 20px" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table width="100%" style="background-image: url('https://domus.ipp.pt/global/images/home/PaginaCertidoes/c1_c1_logo.png');">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="left">
+                                                        <span id="ContentPlaceHolderMain_LblValCertidao" class="wht">Validação de Certidões</span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span id="ContentPlaceHolderMain_LblCurrentDateTime" class="wht">2025-01-29 19:37:19</span>
+                                                                    </td>
+                                                                    <td width="30px">&nbsp;</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr style="height: 3px">
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img id="ContentPlaceHolderMain_Image2" src="https://domus.ipp.pt/global/images/home/PaginaCertidoes/c2_presid%c3%aancia_do_polit%c3%a9cnico_do_porto.png" /></td>
+                                </tr>
+                                <tr style="height: 3px">
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img id="ContentPlaceHolderMain_Image3" src="https://domus.ipp.pt/global/images/home/PaginaCertidoes/c3_validacao.png" /></td>
+                                </tr>
+                                <tr style="height: 3px">
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr id="ContentPlaceHolderMain_trCodigo">
+	<td>
+                                        <div id="ContentPlaceHolderMain_pnVerify">
+		
+                                            <table border="0" width="" cellspacing="0" cellpadding="2" summary="accao">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span id="ContentPlaceHolderMain_LblCodCertidao" class="form">Código da Certidão:</span><br />
+                                                            <div>
+                                                                <input name="ctl00$ContentPlaceHolderMain$txCodigoVerificacao" type="text" id="ContentPlaceHolderMain_txCodigoVerificacao" style="width:150px;position: relative; float: left; margin: 3px;" />
+                                                                <a id="ContentPlaceHolderMain_btValidar" title="Ok" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolderMain$btValidar&#39;,&#39;&#39;)">Ok</a><script type="text/javascript">
+$("#ContentPlaceHolderMain_btValidar").button({ 
+   disabled: false,
+ label: "Ok",
+   icons: {
+      secondary: "ui-icon-triangle-1-e"
+   }
+});
+</script>
+<style type="text/css"> a#ContentPlaceHolderMain_btValidar:hover { border-style:solid; } </style>
+                                                                <input type="hidden" name="action" value="Validar" />
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <br />
+                                                            <div id="ContentPlaceHolderMain_MsgBoxInfo">   <div id="euipp_web_portal_webcontrols_messagebox_text_ContentPlaceHolderMain_MsgBoxInfo" class="euipp_wp_wc_mb_text" style="display: inline;"></div>   <div id="euipp_web_portal_webcontrols_messagebox_image_ContentPlaceHolderMain_MsgBoxInfo" class="euipp_wp_wc_mb_image" style="display: none;">       <span class="ui-icon ui-icon-info" style="float:left;"></span>   </div></div>
+		<script type="text/javascript">
+		    if($("#euipp_web_portal_webcontrols_messagebox_style").length == 0) {
+		        var style = jQuery("<style id=\"euipp_web_portal_webcontrols_messagebox_style\" type=\"text/css\">\n" +
+		            "    .euipp_wp_wc_mb_text { position: absolute; left: 45px; top: 11px; }\n" +
+		            "    .euipp_wp_wc_mb_image { position: absolute; left: 15px; top: 10px; }\n" +
+		            "</style>\n");
+		        style.appendTo(document.body);
+		    }
+		    $("#euipp_web_portal_webcontrols_messagebox_text_ContentPlaceHolderMain_MsgBoxInfo").html("Insira o Código da Certidão!");
+		    $("#euipp_web_portal_webcontrols_messagebox_image_ContentPlaceHolderMain_MsgBoxInfo").attr("style","display:inline");
+		    if ($("#ContentPlaceHolderMain_MsgBoxInfo").dialog("instance") != undefined) { $("#ContentPlaceHolderMain_MsgBoxInfo").dialog("destroy"); }
+		    $("#ContentPlaceHolderMain_MsgBoxInfo").hide();
+		    $("#ContentPlaceHolderMain_MsgBoxInfo").dialog({
+		        title: "Validação de Certidões",
+		        show: "clip",
+		        hide: "clip",
+		        position: { my: "center", at: "center", of: window},
+		        modal: true,
+		        draggable: false,
+		        buttons: {
+		            Ok: function () {
+		                $(this).dialog("close");
+		            }
+		        }
+		    });
+		
+		</script>
+		
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        
+	</div>
+                                    </td>
+</tr>
+
+                                
+                                <tr>
+                                    <td>
+                                        
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px">
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img id="ContentPlaceHolderMain_Image4" src="https://domus.ipp.pt/global/images/home/PaginaCertidoes/c4_c3_barra_03_200px.png" /></td>
+                                </tr>
+                                <tr style="height: 30px">
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td align="right">
+                                        <a id="ContentPlaceHolderMain_Image5" class="a"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+ 
+		</div>
+	
+
+<script type="text/javascript">
+//<![CDATA[
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+
+theForm.oldOnLoad = window.onload;
+window.onload = WebForm_RestoreScrollPosition;
+//]]>
+</script>
+</form>
+</body>
+</html>

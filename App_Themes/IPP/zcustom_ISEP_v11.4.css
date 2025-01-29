@@ -1,0 +1,809 @@
+
+
+/*MENU CABEÇALHO PÁGINA*/
+.cabecalho tr td label
+{
+    font-family: Arial,Verdana,Sans-Serif;
+    color: #5E6A71; /*  vertical-align:top;*/
+    text-align: left;
+    display: inline;
+    padding-left: 5px;
+}
+.cabecalho tr td
+{
+    font-size: 10px;
+    font-family: Arial,Verdana,Sans-Serif;
+    color: #5E6A71;
+    padding: 0 20px 0 20px; /*display:inline;*/
+}
+.cabecalho_prim
+{
+    width:100%;
+}
+.cabecalho_prim tr td
+{
+    padding: 0px 5px 0px 0px; /*  padding:0px 20px 0px 20px;*/
+    vertical-align: bottom;
+    text-align: left;
+    text-transform: uppercase;
+}
+.cabecalho
+{
+   /* margin-left: -25px;
+    border-spacing: 25px 0px;*/
+    border-spacing: 5px 0px;
+}
+.cabecalho_top
+{
+    vertical-align: bottom;
+}
+.cabecalho_top td
+{
+    vertical-align: bottom;
+    border-top: 2px solid #DC4E34;
+}
+.cabecalho_top td input
+{
+    margin-left: 5px;
+    font-family: Arial,verdana, Sans-Serif;
+    color: #5E6A71;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin: 0px;
+    text-transform:uppercase;
+}
+.cabecalho_top td ul li div ul li input
+{
+    font-size:9px;
+    font-weight:bold;
+}
+.cabecalho_top td input .x-btn-center
+{
+    text-align: left;
+}
+
+.cabecalho_bottom
+{
+    top: 0%;
+    vertical-align: top;
+    text-align: left;
+    margin-left: 0;
+    font-size: 10px;
+}
+.cabecalho_bottom td label
+{
+    font-size: 9px;
+    text-transform: uppercase;
+}
+.cabecalho_top td label
+{
+    vertical-align: bottom;
+    text-align: left;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+}
+.cabecalho_top td a
+{
+    vertical-align: bottom;
+    text-align: left;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 12px;
+    color: #5E6A71;
+    cursor: pointer;
+    font-family: Verdana,Arial, Sans-Serif;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-top: 11px;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+/*LOG OUT*/
+.LogOut tr td label
+{
+    font-family: Arial,Verdana,Sans-Serif;
+    color: #5E6A71; /*  vertical-align:top;*/
+    text-align: left;
+    display: inline;
+    padding-left: 5px;
+}
+.LogOut tr td
+{
+    font-size: 10px;
+    font-family: Arial,Verdana,Sans-Serif;
+    color: #5E6A71;
+    padding: 0 20px 0 20px; /*display:inline;*/
+}
+.LogOut_prim
+{
+    width:100%;
+}
+.LogOut_prim tr td
+{
+    padding: 0px 5px 0px 0px; /*  padding:0px 20px 0px 20px;*/
+    vertical-align: bottom;
+    text-align: left;
+    text-transform: uppercase;
+}
+.LogOut
+{
+   /* margin-left: -25px;
+    border-spacing: 25px 0px;*/
+    border-spacing: 5px 0px;
+}
+.LogOut_top
+{
+    vertical-align: bottom;
+}
+.LogOut_top td
+{
+    vertical-align: bottom;
+    border-top: 2px solid #DC4E34;
+}
+.LogOut_top td input
+{
+    margin-left: 5px;
+    font-family: Arial,verdana, Sans-Serif;
+    color: #5E6A71;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin: 0px;
+    text-transform:uppercase;
+}
+.LogOut_top td ul li div ul li input
+{
+    font-size:9px;
+    font-weight:bold;
+}
+.LogOut_top td input .x-btn-center
+{
+    text-align: left;
+}
+
+.LogOut_bottom
+{
+    top: 0%;
+    vertical-align: top;
+    text-align: left;
+    margin-left: 0;
+    font-size: 10px;
+}
+.LogOut_bottom td label
+{
+    font-size: 9px;
+    text-transform: uppercase;
+}
+.LogOut_top td label
+{
+    vertical-align: bottom;
+    text-align: left;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+}
+.LogOut_top td a
+{
+    vertical-align: bottom;
+    text-align: left;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    color: #5E6A71;
+    cursor: pointer;
+    font-family: Arial, Verdana, Sans-Serif;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-top: 11px;
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	
+}
+form ul {
+    padding: 0.3em;
+}
+.oe_overlay{
+	background:#000;
+	opacity:0;
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+}
+ul.oe_menu{
+	list-style:none;
+	clear:both;
+}
+ul.oe_menu > li{
+    height:25px;
+    float:left;
+    position:relative;
+}
+ul.oe_menu > li > a{
+	display:block;
+	background-color:WHITE;
+	color:#5E6A71;
+	text-decoration:none;
+	font-size:12px;
+	margin-left:0px;
+	font-family: Arial,Verdana,Sans-Serif;
+	font-size:14px;
+	font-weight:bold !important;
+	text-align:left;
+	padding:2px;
+	vertical-align:bottom;
+	padding-top:6px;
+	
+	/* GAJLS */
+	border: 1px solid transparent;
+}
+ul.oe_menu > li > a:hover,
+ul.oe_menu > li.selected > a {
+	background-color: #DDDDDD; /*#EFF0F1;*//* GAJLS */
+	color:#5E6A71;
+	opacity:1.0;
+	
+	/* GAJLS */
+	border: 1px solid #DDDDDD; /*#EFF0F1; /*#5E6A71;*/
+	/*border-bottom: 1px solid #ffffff !important;*/
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	/*z-index: 99999999999;*/
+}
+
+.oe_wrapper ul.hovered > li > a{
+	background:#fff;
+	text-shadow:0px 0px 1px #FFF;
+}
+ul.oe_menu div{
+	position:absolute;
+	border: 1px solid #DDDDDD; /*#5E6A71;*//* GAJLS */
+	left:0px;
+	background-color: #DDDDDD; /*background:#fff;*//* GAJLS */
+	padding:20px 0px 13px 5px;
+	display:none;
+	
+	/* GAJLS */
+	/* Theoretically for IE 8 & 9 (more valid) */
+	/* ...but not required as filter works too */
+	/* should come BEFORE filter */
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+	/* This works in IE 8 & 9 too */
+	/* ... but also 5, 6, 7 */
+	filter: alpha(opacity=95);
+	/* Older than Firefox 0.9 */
+	-moz-opacity:0.95;
+	/* Safari 1.x (pre WebKit!) */
+	-khtml-opacity: 0.95;
+	/* Modern!
+	/* Firefox 0.9+, Safari 2?, Chrome any?
+	/* Opera 9+, IE 9+ */
+	opacity: 0.95;
+	/* Menu Effect*/
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+ul.oe_menu div ul li a{
+	text-decoration:none;
+	color:#5E6A71;
+	padding:20px 20px 20px 20px;
+	margin:2px;
+	display:block;
+	font-size:12px !important;
+}
+ul.oe_menu div ul.oe_full{
+	width:100%;
+}
+ul.oe_menu div ul li a:hover{
+	background:#EFF0F1;
+	color:#5E6A71;
+}
+ul.oe_menu li ul{
+	list-style:none;
+	float:left;
+	min-width: 150px; /* GAJLS */
+	margin-right:13px;
+
+}
+li.oe_heading{
+	color:#aaa;
+	font-size:16px;
+	margin-bottom:10px;
+	padding-bottom:6px;
+	border-bottom:1px solid #ddd;
+}
+/*------------------*/
+
+a:hover
+{
+    text-decoration: none !important;
+}
+
+.cabecalho_top tdeditar
+{
+    vertical-align: bottom;
+}
+
+label.switch-toggle
+{
+    background: url('switch.png') repeat-y;
+    display: block !important;
+    height: 12px;
+    padding-left: 26px;
+    cursor: pointer;
+    display: none;
+}
+label.switch-toggle.on
+{
+    background-position: 0px 12px;
+    vertical-align: bottom;
+}
+label.switch-toggle.off
+{
+    background-position: 0px 0px;
+    vertical-align: bottom;
+}
+label.switch-toggle.hidden
+{
+    display: none;
+}
+.hidden
+{
+    display: none;
+}
+.switch
+{
+    display: inline-block;
+    bottom: 0%;
+    vertical-align: bottom;
+    margin-bottom: 0px;
+}
+.switch label
+{
+    display: block;
+    bottom: 0%;
+    vertical-align: bottom;
+    margin-bottom: 0px;
+}
+.tdeditar table tr td
+{
+    vertical-align: bottom;
+    text-align: left;
+}
+.tdeditar table tr td div
+{
+    text-align: left;
+    margin-bottom: 0px;
+}
+.tdeditar label
+{
+    margin-bottom: 0px;
+}
+
+
+/* GAJLS */
+input[type=text], input[type=password], select, textarea {
+	background-color: #FFFFFF;
+	border-radius: 3px;
+	padding: 2px;
+}
+
+select { padding: 2px 2px 2px 0; }
+
+/*
+Necessário devido a definição do ficheiro zjquery-ui-1.8.18.custom.css.
+Ao alterar cores de <a> em StyleSheet.css, alterar aqui também.
+*/
+.ui-widget-content div a {
+    color: #932F15;
+    text-decoration: none;
+}
+
+.ui-widget-content div a.ahover:hover {
+    color: #838383;
+    text-decoration: none;
+}
+
+/* 
+Necessário devido a definição no ficheiro StyleSheet.css.
+Ao alterar a propriedade 'color' em ui-state-hover, alterar aqui também.
+*/
+.ui-state-hover span.ui-button-text { color: #ffffff; }
+
+/*
+CSS Importante Para Area Pessoal
+*/
+.picimg{
+	border: 1px solid rgba(94, 106, 113, .5);
+	color: rgba(94, 106, 113, .5); /* same as #5e6a71 */
+	display: block;
+	width: 132px;
+	height: 133px;
+	text-transform: uppercase;
+}
+
+.titlelabel {
+	border-top: 2px solid #DC4E34;
+	color: #DC4E34;
+	display: inline-block;
+	font-family:Verdana, Arial, Sans-serif;
+	font-size: SMALL;
+	padding: 2px 15px 2px 0px;
+	text-transform: uppercase;
+}
+
+.textlabel {
+	border: 1px solid transparent;
+	border-radius: 3px;
+	color: #505a5d;
+	display: inline-block;
+	font-family:Verdana, Arial, Sans-serif;
+	font-size: 9px;
+	padding: 2px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.inputtext {
+	color: #5e6a71;
+	border: 1px solid rgba(94, 106, 113, .5);
+	font-family:Verdana, Arial, Sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	margin-left: 12px;
+}
+.inputtext2 {
+	color: #5e6a71;
+	border: 1px solid rgba(94, 106, 113, .5);
+	font-family: Verdana, Arial, Sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-left: 12px;
+}
+
+.textlabel2 {
+	border: 1px solid transparent;
+	border-radius: 3px;
+	color: #5E6A71;
+	display: inline-block;
+	font-family: Verdana, Arial, Sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 2px;
+	text-transform: uppercase;
+	padding-left: 12px;
+}
+.textlabel3 {
+	border: 1px solid transparent;
+	border-radius: 3px;
+	color: #5E6A71;
+	display: inline-block;
+	font-family:Verdana, Arial, Sans-serif;
+	font-size: 1em;
+	font-weight: bolder;
+	padding: 2px;
+	padding-left: 12px;
+	text-align:justify;
+}
+
+.textlabel4 {
+	border: 1px solid transparent;
+	border-radius: 3px;
+	color: #5E6A71;
+	display: inline-block;
+	font-family:Verdana, Arial, Sans-serif;
+	font-size: 1em;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	text-align:justify;
+}
+
+.col-left-line{
+	border-right:2px solid rgba(94, 106, 113, .25);
+	width:0%;
+	padding-right:0px;
+	padding-left:15px;
+}
+.row [class*="col-"]{
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+.row{
+  overflow: hidden; 
+}
+
+
+.emptyinputmsg {
+	color: rgba(94, 106, 113, .25);
+}
+
+.inputtextmail {
+	color: #5e6a71;
+	border: 1px solid rgba(94, 106, 113, .5);
+	font-family: Arial, Sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-left: 12px;
+}
+
+.selectddl {
+	color: #5e6a71;
+	border: 1px solid rgba(94, 106, 113, .5);
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	margin-left: 12px;
+}
+.chosen-container{
+	margin-left: 12px;
+}
+
+.chosen-drop{
+	width: auto !important;
+	white-space: nowrap !important;
+	border-top: 1px solid #aaa !important;
+	min-width: 100% !important;
+}
+
+.chosen-container-single .chosen-single{
+	height:22px !important;
+	font-family: Verdana,Arial, Sans-serif !important;
+	line-height: 21px !important;
+	font-size: 1em !important;
+	font-weight: bold !important;
+	margin-bottom: 5px !important;
+}
+
+.dropzone{
+	margin-left:12px;
+}
+
+.captionspan {
+	color: #5e6a71;
+	border: 1px solid transparent;
+	font-family: Verdana, Arial, Sans-serif;
+	font-size: 9px;
+}
+
+.line {
+	border-bottom: 2px solid rgba(94, 106, 113, .25);
+}
+
+/*SITE ISEP*/
+
+.sub-title-blue
+{
+   	font-family:Calibri,Helvetica,Arial,sans-serif;
+	display:block;
+	margin-top:5px;
+	padding-bottom:5px;
+	padding-top:5px;
+	text-transform: uppercase;
+	font-size:14px;
+	color:#009ab2;
+}
+
+.sub-title-green
+{
+   	font-family:Calibri,Helvetica,Arial,sans-serif;
+	display:block;
+	margin-top:5px;
+	padding-bottom:5px;
+	padding-top:5px;
+	text-transform: uppercase;
+	font-size:14px;
+	color:#7ab929;
+}
+
+.sub-title-orange
+{
+   	font-family:Calibri,Helvetica,Arial,sans-serif;
+	display:block;
+	margin-top:5px;
+	padding-bottom:5px;
+	padding-top:5px;
+	text-transform: uppercase;
+	font-size:14px;
+	color:#ee7402;
+}
+
+.sub-title-red
+{
+   	font-family:Calibri,Helvetica,Arial,sans-serif;
+	display:block;
+	margin-top:5px;
+	padding-bottom:5px;
+	padding-top:5px;
+	text-transform: uppercase;
+	font-size:14px;
+	color:#b1380b;
+}
+
+.sub-title-darkBlue
+{
+   	font-family:Calibri,Helvetica,Arial,sans-serif;
+	display:block;
+	margin-top:5px;
+	padding-bottom:5px;
+	padding-top:5px;
+	text-transform: uppercase;
+	font-size:14px;
+	color:#2c3e50;
+}
+
+.sub-title-pink
+{
+   	font-family:Calibri,Helvetica,Arial,sans-serif;
+	display:block;
+	margin-top:5px;
+	padding-bottom:5px;
+	padding-top:5px;
+	text-transform: uppercase;
+	font-size:14px;
+	color:#d4007f;
+}
+.text-site
+{
+   	font-family:Calibri,Helvetica,Arial,sans-serif;
+	font-size:16px;
+	line-height:20px;	
+	
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+	background-image: url(../stylesheet/left_arrow.png) no repeat;
+	cursor: auto;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+	background: linear-gradient(to bottom, white 0%, gainsboro 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: 1px solid #cacaca;
+	color: #333333 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+	border: 1px solid transparent;
+	box-sizing: border-box;
+	color: #333333 !important;
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 2px;
+	min-width: 1.5em;
+	padding: 0.5em 1em;
+	text-align: center;
+	text-decoration: none !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+	background: none repeat scroll 0 0 transparent;
+	border: 1px solid transparent;
+	box-shadow: none;
+	color: #666 !important;
+	cursor: default;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+	background: linear-gradient(to bottom, #696363 0%, #a8a6a6 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: 1px solid #a8a6a6;
+	color: white !important;
+}
+
+.dataTables_filter {
+	padding-bottom: 10px;
+	padding-right: 10px;
+	float: right;
+	display: inline-block;
+}
+
+.dataTables_length {
+	padding-bottom: 10px;
+	display: inline-block;
+	text-align: left;
+}
+
+.dataTables_info {
+	padding-top: 10px;
+	display: inline-block;
+	padding-left: 10px;
+}
+
+.dataTables_paginate {
+	padding-top: 10px;
+	display: inline-block;
+	padding-rigth: 10px;
+	float: right;
+}
+
+.text-blue
+{
+	color:#009ab2;
+}
+
+.text-green
+{
+	color:#7ab929;
+}
+
+.text-orange
+{
+	color:#ee7402;
+}
+
+.text-red
+{
+	color:#b1380b;
+}
+
+.text-darkBlue
+{
+	color:#2c3e50;
+}
+
+.text-pink
+{
+	color:#d4007f;
+}
+
+.text-bold
+{
+	font-weight: bold;
+}		
+hr
+{
+	border-top:2px solid rgba(94, 106, 113, .25);
+}
+.container{
+	width:100%;
+	padding-left:0px;
+}
+.listabox {
+			padding-left:10;
+            border: 1px solid #999;
+            background: #FFF;
+            cursor: default;
+            text-align: left;
+            max-height: 100px;
+            overflow: auto;
+            margin: -10px 10px 10px 35px; /* IE6 specific: */
+            _height: 350px;
+            _margin: 0;
+            _overflow-x: hidden;
+            width: 100px;
+            padding: 5px 5px 5px 5px;
+            white-space: nowrap;
+            background: url(img/shadow.png) no-repeat bottom right;
+            position: absolute;
+            _background: none;
+            _margin: 0;
+            list-style-type: none;
+            margin: -1px 10px 10px 10px;
+            width: auto;
+            position: absolute;
+            min-width: 150px;
+            background-color: white;
+            z-index: 999;
+        }
+
+            .listabox .hover {
+                background-color: Gray;
+                color: black;
+            }

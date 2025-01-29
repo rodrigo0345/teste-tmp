@@ -1,0 +1,7 @@
+@media print 
+{
+	td.layout_column_left { display: none; }
+	table.layout_banner { display: none; }
+	table.layout_menu_top_logout { display: none; }
+	table.layout_pagetitle_user { }
+}

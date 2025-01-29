@@ -1,0 +1,124 @@
+.foo {
+}
+/* W3C CSS validator likes CSS files to start with a class rather than a comment. Soooooo.... */
+
+/* This style sheet is intended to contain OFTEN CHANGED rules used when the Menu control adapter is enabled. */
+
+/* When the Menu control's Orientation property is Vertical the adapter wraps the menu with DIV */
+/* whose class is AspNet-Menu-Vertical. */
+/* Note that the example menu in this web site uses relative positioning to force the menu to occupy */
+/* a specific place in the web page.  Your web site will likely use a different technique to position your */
+/* menu.  So feel free to change all the properties found in this CSS rule if you clone this style sheet. */
+/* There is nothing, per se, that is magical about these particular property value choices.  They happen to */
+/* work well for the sample page used to demonstrate an adapted menu. */
+.MenuLeft .AspNet-Menu-Vertical {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	z-index: 300;
+}
+
+/* The menu adapter renders an unordered list (ul) in HTML for each tier in the menu. */
+/* So, effectively says: style all tiers in the menu this way... */
+.MenuLeft ul {
+	background: #932f15;
+}
+
+/* Top tier */
+.MenuLeft .AspNet-Menu-Vertical ul.AspNet-Menu {
+	width: 177px;
+}
+
+/* This rule effectively says: style all tiers EXCEPT THE TOP TIER in the menu this way... */
+/* In other words, this rule can be used to style the second and third tiers of the menu without impacting */
+/* the topmost tier's appearance. */
+.MenuLeft ul.AspNet-Menu ul {
+	width: 200px;
+	left: 170px;
+	top: 3px;
+	z-index: 400;
+}
+
+.MenuLeft ul.AspNet-Menu ul ul {
+	left: 193px;
+}
+
+/* The menu adapter generates a list item (li) in HTML for each menu item. */
+/* Use this rule create the common appearance of each menu item. */
+.MenuLeft ul.AspNet-Menu li {
+	background-color: #DDDDDD;
+	/*padding-top:10px;
+	padding-bottom:10px;*/
+}
+.MenuLeft ul.AspNet-Menu li li {
+	background-color: #DDDDDD;
+}
+.MenuLeft ul.AspNet-Menu li li li {
+	background-color: #DDDDDD;
+}
+
+/* Within each menu item is a link or a span, depending on whether or not the MenuItem has defined it's */
+/* NavigateUrl property. By setting a transparent background image here you can effectively layer two images */
+/* in each menu item.  One comes from the CSS rule (above) governing the li tag that each menu item has. */
+/* The second image comes from this rule (below). */
+.MenuLeft ul.AspNet-Menu li a, .MenuLeft ul.AspNet-Menu li span {
+	color: #4D4D4D;
+	/*font-weight: bold;*/
+	padding: 4px 2px 4px 8px;
+	/*border-top: 1px solid white;
+	border-bottom: 1px solid white;*/
+	background: transparent url(layout/menu/arrow.gif) right center no-repeat;
+	letter-spacing:1px;
+}
+
+/* When a menu item contains no submenu items it is marked as a "leaf" and can be styled specially by this rule. */
+.MenuLeft ul.AspNet-Menu li.AspNet-Menu-Leaf a, .MenuLeft ul.AspNet-Menu li.AspNet-Menu-Leaf span {
+	background-image: none;
+	color:#4D4D4D;
+}
+
+/* Not used presently.  This is here if you modify the menu adapter so it renders img tags, too. */
+.MenuLeft ul.AspNet-Menu li a img {
+	border-style: none;
+	vertical-align: middle;
+}
+
+/* When you hover over a menu item, this rule comes into play. */
+/* Browsers that do not support the CSS hover pseudo-class, use JavaScript to dynamically change the */
+/* menu item's li tag so it has the AspNet-Menu-Hover class when the cursor is over that li tag. */
+/* See MenuAdapter.js (in the JavaScript folder). */
+.MenuLeft ul.AspNet-Menu li:hover, .MenuLeft ul.AspNet-Menu li.AspNet-Menu-Hover {
+	background-color: #ca4d24;
+}
+
+.MenuLeft ul.AspNet-Menu li:hover a, .MenuLeft ul.AspNet-Menu li:hover span, .MenuLeft ul.AspNet-Menu li.AspNet-Menu-Hover a, .MenuLeft ul.AspNet-Menu li.AspNet-Menu-Hover span, .MenuLeft ul.AspNet-Menu li:hover li:hover a, .MenuLeft ul.AspNet-Menu li:hover li:hover span, .MenuLeft ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover a, .MenuLeft ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover span, .MenuLeft ul.AspNet-Menu li:hover li:hover ul a:hover, .MenuLeft ul.AspNet-Menu li:hover li:hover ul span.Asp-Menu-Hover, .MenuLeft ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover ul a:hover, .MenuLeft ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover ul span.Asp-Menu-Hover {
+	color: white;
+	/*border-bottom: 0px;*/
+}
+
+.MenuLeft ul.AspNet-Menu li:hover ul a, .MenuLeft ul.AspNet-Menu li:hover ul span, .MenuLeft ul.AspNet-Menu li.AspNet-Menu-Hover ul a, .MenuLeft ul.AspNet-Menu li.AspNet-Menu-Hover ul span, .MenuLeft ul.AspNet-Menu li:hover li:hover ul a, .MenuLeft ul.AspNet-Menu li:hover li:hover ul span, .MenuLeft ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover ul a, .MenuLeft ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover ul span {
+	color: #4D4D4D;
+}
+
+/* While you hover over a list item (li) you are also hovering over a link or span because */
+/* the link or span covers the interior of the li.  So you can set some hover-related styles */
+/* in the rule (above) for the li but set other hover-related styles in this (below) rule. */
+.MenuLeft ul.AspNet-Menu li a:hover, .MenuLeft ul.AspNet-Menu li span.Asp-Menu-Hover {
+	color: white;
+	background: transparent url(layout/menu/arrow_hover.gif) right center no-repeat;
+}
+
+.MenuLeft ul.AspNet-Menu li.AspNet-Menu-Leaf a:hover {
+	background-image: none;
+	color:white;
+}
+.layout_column_left table td
+{
+	border-bottom:none !important;
+/*	padding-bottom:7px;*/
+}
+.AspNet-Menu-Vertical .AspNet-Menu li
+{
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}

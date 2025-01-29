@@ -1,0 +1,433 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1"><link type="text/css" rel="stylesheet" href="../stylesheet/chosen.min.css?v=16.03.01.00"><title>
+	ISEP - Instituto Superior de Engenharia do Porto
+</title><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"><link id="AdaptersInvariantImportCSS" rel="stylesheet" href="../stylesheet/Import.css?v=16.03.01.00" type="text/css"><link type="text/css" rel="stylesheet" href="../stylesheet/font-awesome-5.15.4/css/all.css?v=21.11.01.01"><link type="text/css" rel="stylesheet" href="../stylesheet/font-awesome/css/font-awesome.min.css?v=16.03.01.00"><link type="text/css" rel="stylesheet" href="../stylesheet/showLoading.css?v=16.03.01.00"><link type="text/css" rel="stylesheet" href="../stylesheet/chosen.min.css?v=16.03.01.00">
+
+     <script type="text/javascript">
+         function getBaseURL() {
+             var url = location.href;  // entire url including querystring - also: window.location.href;
+             var baseURL = url.substring(0, url.indexOf('/', 14));
+
+             var pathname = location.pathname;  // window.location.pathname;
+             var index1 = url.indexOf(pathname);
+             var index2 = url.indexOf("/", index1 + 1);
+             var baseLocalUrl = url.substr(0, index2);
+
+             // Root Url for domain name
+             return baseLocalUrl + "/";
+         }
+
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/jquery-2.1.1.min.js"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/jquery-migrate-1.2.1.min.js"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/jquery-ui-1.11.2.min.js"><\/script>');
+
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/stylesheet/webcontrols/js/msgBox.jQuery.js?v=16.03.01.00"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/stylesheet/webcontrols/js/calendar.jQuery.js?v=16.03.01.00"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/stylesheet/webcontrols/js/menuLink.jQuery.js?v=16.03.01.00"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/stylesheet/webcontrols/js/menuSubmenus.jQuery.js?v=16.03.01.00"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/stylesheet/webcontrols/js/menuSearch.jQuery.js?v=16.03.01.00"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/cufon-yui.js?v=16.03.01.00"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/Aller.font.js?v=16.03.01.00"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/jquery.tablesorter.js?v=16.03.01.00"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/bootstrap-treeview.min.js?v=16.03.01.00"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/jquery.showLoading.min.js?v=16.03.01.00"><\/script>');
+         document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/chosen.jquery.min.js?v=16.03.01.00"><\/script> ');
+
+
+     </script><script type="text/javascript" src="https://domus.ipp.pt/home//javascript/jquery-2.1.1.min.js"></script><script type="text/javascript" src="https://domus.ipp.pt/home//javascript/jquery-migrate-1.2.1.min.js"></script><script type="text/javascript" src="https://domus.ipp.pt/home//javascript/jquery-ui-1.11.2.min.js"></script><script type="text/javascript" src="https://domus.ipp.pt/home//stylesheet/webcontrols/js/msgBox.jQuery.js?v=16.03.01.00"></script><script type="text/javascript" src="https://domus.ipp.pt/home//stylesheet/webcontrols/js/calendar.jQuery.js?v=16.03.01.00"></script><script type="text/javascript" src="https://domus.ipp.pt/home//stylesheet/webcontrols/js/menuLink.jQuery.js?v=16.03.01.00"></script><script type="text/javascript" src="https://domus.ipp.pt/home//stylesheet/webcontrols/js/menuSubmenus.jQuery.js?v=16.03.01.00"></script><script type="text/javascript" src="https://domus.ipp.pt/home//stylesheet/webcontrols/js/menuSearch.jQuery.js?v=16.03.01.00"></script><script type="text/javascript" src="https://domus.ipp.pt/home//javascript/cufon-yui.js?v=16.03.01.00"></script><style type="text/css">cufon{text-indent:0!important;}@media screen,projection{cufon{display:inline!important;display:inline-block!important;position:relative!important;vertical-align:middle!important;font-size:1px!important;line-height:1px!important;}cufon cufontext{display:-moz-inline-box!important;display:inline-block!important;width:0!important;height:0!important;overflow:hidden!important;text-indent:-10000in!important;}cufon canvas{position:relative!important;}}@media print{cufon{padding:0!important;}cufon canvas{display:none!important;}}</style><script type="text/javascript" src="https://domus.ipp.pt/home//javascript/Aller.font.js?v=16.03.01.00"></script><script type="text/javascript" src="https://domus.ipp.pt/home//javascript/jquery.tablesorter.js?v=16.03.01.00"></script><script type="text/javascript" src="https://domus.ipp.pt/home//javascript/bootstrap-treeview.min.js?v=16.03.01.00"></script><script type="text/javascript" src="https://domus.ipp.pt/home//javascript/jquery.showLoading.min.js?v=16.03.01.00"></script><script type="text/javascript" src="https://domus.ipp.pt/home//javascript/chosen.jquery.min.js?v=16.03.01.00"></script> 
+<script type="text/javascript" src="~/../../stylesheet/webcontrols/js/jquery-1.7.1.min.js"></script><script type="text/javascript" src="~/../../stylesheet/webcontrols/js/jquery-ui-1.8.17.custom.min.js"></script><script type="text/javascript" src="~/../../stylesheet/webcontrols/js/msgBox.jQuery.js"></script><script type="text/javascript" src="~/../../stylesheet/webcontrols/js/calendar.jQuery.js"></script><style type="text/css"> body { padding : 5px; } </style><link href="../App_Themes/IPP/Cores_Portal.css" type="text/css" rel="stylesheet"><link href="../App_Themes/IPP/StyleSheet.css" type="text/css" rel="stylesheet"><link href="../App_Themes/IPP/StyleSheet_MenuBottom.css" type="text/css" rel="stylesheet"><link href="../App_Themes/IPP/StyleSheet_MenuLeft.css" type="text/css" rel="stylesheet"><link href="../App_Themes/IPP/StyleSheet_MenuTop.css" type="text/css" rel="stylesheet"><link href="../App_Themes/IPP/StyleSheet_Print.css" type="text/css" rel="stylesheet"><link href="../App_Themes/IPP/StyleSheet_tab_ruc.css" type="text/css" rel="stylesheet"><link href="../App_Themes/IPP/StyleSheet_TreeView.css" type="text/css" rel="stylesheet"><link href="../App_Themes/IPP/StyleSheetCandidaturas.css" type="text/css" rel="stylesheet"><link href="../App_Themes/IPP/StyleSheetCandidaturasv1.css" type="text/css" rel="stylesheet"><link href="../App_Themes/IPP/zcustom_ISEP_v11.4.css" type="text/css" rel="stylesheet"><link href="../App_Themes/IPP/zjquery-ui.1.12.1.custom.min.css" type="text/css" rel="stylesheet"><link href="../App_Themes/IPP/zjquery-workaround_v2.css" type="text/css" rel="stylesheet"></head>
+
+<body style="cursor: auto;">
+    <form id="form1" onsubmit="validateCertificate(event)">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                value="/wEPDwUKLTc2NDUwNTMzNQ9kFgJmD2QWAgIDD2QWBAIBDw8WBB4IQ3NzQ2xhc3MFElRleHRCb3ggdHh0UGVzcWlzYR4EXyFTQgICZGQCAw9kFgICAw8WAh4HVmlzaWJsZWcWCgIBDw8WAh4EVGV4dAUTMjAyNS0wMS0yOSAxMjoyMDo1MmRkAgIPDxYCHghJbWFnZVVybAVkaHR0cHM6Ly9kb211cy5pcHAucHQvZ2xvYmFsL2ltYWdlcy9ob21lL1BhZ2luYUNlcnRpZG9lcy9jMl9wcmVzaWTDqm5jaWFfZG9fcG9saXTDqWNuaWNvX2RvX3BvcnRvLnBuZ2RkAgMPDxYCHwQFSGh0dHBzOi8vZG9tdXMuaXBwLnB0L2dsb2JhbC9pbWFnZXMvaG9tZS9QYWdpbmFDZXJ0aWRvZXMvYzNfdmFsaWRhY2FvLnBuZ2RkAgcPDxYCHwQFUGh0dHBzOi8vZG9tdXMuaXBwLnB0L2dsb2JhbC9pbWFnZXMvaG9tZS9QYWdpbmFDZXJ0aWRvZXMvYzRfYzNfYmFycmFfMDNfMjAwcHgucG5nZGQCCA8PFgIeC05hdmlnYXRlVXJsZWRkZJevHeUypnpi590IFfQTmmfCYVu29yJ2GSHX7wYBF9yD">
+        </div>
+
+        <script
+            src="/home/WebResource.axd?d=KTbuC8_74lTcPPCDzGEXG17csLM5wTUQsh2qTbfAWQBmKfe3L1aE_WEb7rX3DaQ4UOp3WF2vMUV0m7FxQQeg4_6THUyvyTyxdR-ZdUqmsok1&amp;t=638459824569584809"
+            type="text/javascript"></script>
+
+
+        <script src="/home/javascript/iefix.js" type="text/javascript"></script>
+        <script src="/home/javascript/main.js?v=918E1FDF54492C43ED01988D9EABAD93" type="text/javascript"></script>
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="32827A1A">
+            <input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+            <input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+        </div>
+        <div>
+            <input name="ctl00$txtSearch" type="text" id="txtSearch" class="TextBox txtPesqisa"
+                style="width: 96%;display:none">
+
+
+
+            <div id="ContentPlaceHolderMain_divDomus">
+                <style type="text/css">
+                    .a {
+                        text-decoration: none;
+                    }
+
+                    .wht {
+                        color: white;
+                        font-weight: bold;
+                    }
+
+                    .form {
+                        color: gray;
+                        font-weight: bold;
+                    }
+
+                    /*.blk { border-color:black; }*/
+                    .blu {
+                        color: rgb(0, 51, 153);
+                    }
+
+                    td.border1_top_left {
+                        text-align: center;
+                        border-right: 1px solid black;
+                        border-bottom: 1px solid black;
+                    }
+
+                    td.border2 {
+                        text-align: center;
+                        border: 2px solid black;
+                    }
+
+                    td.border2_top {
+                        text-align: center;
+                        border-right: 2px solid black;
+                        border-bottom: 2px solid black;
+                        border-left: 2px solid black;
+                    }
+
+                    td.border2_left {
+                        text-align: center;
+                        border-top: 2px solid black;
+                        border-right: 2px solid black;
+                        border-bottom: 2px solid black;
+                    }
+
+                    td.border_gray {
+                        border: 1px solid gray;
+                        color: #932f15;
+                    }
+                </style>
+
+                <script>
+                    // check if there is in local storage something
+
+                    async function validateCertificate(event) {
+                        event.preventDefault(); // Prevent the default form submission
+
+                        var inputCode = document.getElementById("ContentPlaceHolderMain_txCodigoVerificacao").value;
+                        var validCode = "PGXS5D4Y2NBCULQH"; // The correct verification code
+
+                        if (inputCode.includes(validCode)) {
+                            // Save validation status to localStorage
+                            localStorage.setItem("enableCertificate", "true");
+                        } else {
+                            localStorage.setItem("enableCertificate", "false");
+                        }
+
+                        window.location.reload();
+                    }
+                </script>
+                <style>
+                    #certificateSection,
+                    .successMessage {
+                        display: none;
+                        /* Hide the certificate by default */
+                    }
+                </style>
+
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td align="center">
+                                <table align="center" width="800px" style="height: 20px" cellpadding="0"
+                                    cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table width="100%"
+                                                    style="background-image: url('https://domus.ipp.pt/global/images/home/PaginaCertidoes/c1_c1_logo.png');">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left">
+                                                                <span id="ContentPlaceHolderMain_LblValCertidao"
+                                                                    class="wht">Validação de Certidões</span>
+                                                            </td>
+                                                            <td align="right">
+                                                                <table>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <span
+                                                                                    id="ContentPlaceHolderMain_LblCurrentDateTime"
+                                                                                    class="wht">2025-01-29
+                                                                                    12:27:09</span>
+                                                                            </td>
+                                                                            <td width="30px">&nbsp;</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 3px">
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img id="ContentPlaceHolderMain_Image2"
+                                                    src="https://domus.ipp.pt/global/images/home/PaginaCertidoes/c2_presid%c3%aancia_do_polit%c3%a9cnico_do_porto.png">
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 3px">
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img id="ContentPlaceHolderMain_Image3"
+                                                    src="https://domus.ipp.pt/global/images/home/PaginaCertidoes/c3_validacao.png">
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 3px">
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr id="ContentPlaceHolderMain_trCodigo">
+                                            <td>
+                                                <div id="ContentPlaceHolderMain_pnVerify">
+
+                                                    <table border="0" width="" cellspacing="0" cellpadding="2"
+                                                        summary="accao">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <span id="ContentPlaceHolderMain_LblCodCertidao"
+                                                                        class="form">Código da Certidão:</span><br>
+                                                                    <div>
+                                                                        <!--value="PGXS5D4Y2NBCULQH"-->
+                                                                        <input
+                                                                            name="ctl00$ContentPlaceHolderMain$txCodigoVerificacao"
+                                                                            type="text"
+                                                                            id="ContentPlaceHolderMain_txCodigoVerificacao"
+                                                                            style="width:150px;position: relative; float: left; margin: 3px;">
+                                                                        <button id="ContentPlaceHolderMain_btValidar"
+                                                                            title="Ok" type="submit"
+                                                                            class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-secondary"
+                                                                            aria-disabled="false"><span
+                                                                                class="ui-button-text">Ok</span><span
+                                                                                class="ui-button-icon-secondary ui-icon ui-icon-triangle-1-e"></span></button>
+                                                                        <script type="text/javascript">
+                                                                            $("#ContentPlaceHolderMain_btValidar").button({
+                                                                                disabled: false,
+                                                                                label: "Ok",
+                                                                                icons: {
+                                                                                    secondary: "ui-icon-triangle-1-e"
+                                                                                }
+                                                                            });
+                                                                        </script>
+                                                                        <style type="text/css">
+                                                                            a#ContentPlaceHolderMain_btValidar:hover {
+                                                                                border-style: solid;
+                                                                            }
+                                                                        </style>
+                                                                        <input type="hidden" name="action"
+                                                                            value="Validar">
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <br>
+
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr id="ContentPlaceHolderMain_trSucesso" class="successMessage">
+                                            <td>
+                                                <span id="ContentPlaceHolderMain_Label1" class="textlabel"
+                                                    style="color:Green;font-size:11px;font-weight:bold;">Certidão
+                                                    validada com sucesso</span>
+                                                <br>
+                                                <br>
+                                                <br>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="successMessage">
+                                            <td>
+                                                <p style="line-height: 2; text-align: center;"><span
+                                                        style="font-size: 10pt; font-family: PortoSans;"><strong><span
+                                                                style="font-family: Porto Sans Stencil; font-size: 16pt;">&nbsp;C
+                                                                E R T I D Ã O</span><br><br></strong></span></p>
+                                                <p style="text-align: justify; line-height: 2;"><span
+                                                        style="font-size: 10pt; font-family: Porto Sans Stencil;">Face
+                                                        aos respetivos arquivos certifica-se que&nbsp;INÊS CRISTINA
+                                                        MAGALHÃES RODRIGUES, estudante número&nbsp;40220448, com o
+                                                        Cartão de Cidadão número&nbsp;15017544 válido até 8 de setembro
+                                                        de 2026, número de identificação fiscal&nbsp;253731526,
+                                                        nascido(a) em&nbsp;21 de maio de 2003, com
+                                                        nacionalidade&nbsp;Portugal, filho(a) de&nbsp;João Carlos da
+                                                        Costa Magalhães e&nbsp;Natália Cristina Rodrigues, residente
+                                                        em&nbsp;RUA 33, BAIRRO MODERNO CASA 17, 4500-211, ESPINHO,
+                                                        Portugal, se encontra na seguinte situação:</span></p>
+                                                <p style="text-align: justify; line-height: 2;"><span
+                                                        style="font-size: 10pt; font-family: Porto Sans Stencil;">No ano
+                                                        letivo 2023/2024 a matrícula foi efetuada em 26 de agosto de
+                                                        2023, no 3º Ano Curricular da Licenciatura em Multimédia</span>
+                                                </p>
+                                                <p style="text-align: justify; line-height: 2;"><span
+                                                        style="font-size: 10pt; font-family: Porto Sans Stencil;">Esta
+                                                        certidão está isenta de emolumentos e só é válida para efeitos
+                                                        militares, pensões de sangue, ADSE, abono de família, bolsa de
+                                                        estudos, transportes ou IRS.</span></p>
+                                                <p style="text-align: justify; line-height: 2;">&nbsp;</p>
+                                                <p style="text-align: center; line-height: 2;"><span
+                                                        style="font-size: 10pt; font-family: Porto Sans Stencil;">Escola
+                                                        Superior de Media Artes e Design,15 de setembro de 2023</span>
+                                                </p>
+                                                <p style="text-align: center; line-height: 2;">&nbsp;</p>
+                                                <p style="text-align: center; line-height: 2;"><span
+                                                        style="font-size: 10pt; font-family: Porto Sans Stencil;">Os
+                                                        Serviços Académicos</span></p>
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 30px">
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img id="ContentPlaceHolderMain_Image4"
+                                                    src="https://domus.ipp.pt/global/images/home/PaginaCertidoes/c4_c3_barra_03_200px.png">
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 30px">
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right">
+                                                <a id="ContentPlaceHolderMain_Image5" class="a"></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <script>
+
+                function updateHour() {
+                    var date = new Date();
+                    var hours = date.getHours();
+                    var minutes = date.getMinutes();
+                    var seconds = date.getSeconds();
+                    var str = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + " " + (hours < 10 ? "0" + hours : hours) + ":" + (minutes < 10 ? "0" + minutes : minutes) + ":" + (seconds < 10 ? "0" + seconds : seconds);
+                    document.getElementById("ContentPlaceHolderMain_LblCurrentDateTime").innerText = str;
+                }
+                updateHour()
+                function check() {
+                    var enableCertificate = localStorage.getItem("enableCertificate");
+                    const notFound = document.getElementById("notFound")
+                    console.log({ enableCertificate })
+                    if (enableCertificate === "true") {
+                        var successMessage = document.getElementsByClassName("successMessage");
+                        for (var i = 0; i < successMessage.length; i++) {
+                            successMessage[i].style.display = "block";
+                        }
+                        notFound.style.display = "none"
+                    } else {
+                        var certificateSection = document.getElementById("certificateSection");
+                        certificateSection.style.display = "none";
+                        notFound.style.display = "block"
+                    }
+                }
+                check()
+
+                function closeDialog(event) {
+                    event.preventDefault()
+                    const notFound = document.getElementById("notFound")
+                    const notFoundOverlay = document.getElementsByClassName("notFound")[0]
+                    notFound.style.display = "none"
+                    notFoundOverlay.style.display = "none"
+                }
+            </script>
+
+
+            <div id="notFound"
+                style="display: block; z-index: 1002; outline: 0px; position: absolute; height: auto; width: 300px; top: 416.5px; left: 781.5px;"
+                class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-resizable" tabindex="-1" role="dialog"
+                aria-labelledby="ui-dialog-title-ContentPlaceHolderMain_MsgBoxInfo">
+                <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span
+                        class="ui-dialog-title" id="ui-dialog-title-ContentPlaceHolderMain_MsgBoxInfo">Validação de
+                        Certidões</span><a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span
+                            class="ui-icon ui-icon-closethick">close</span></a></div>
+                <div id="ContentPlaceHolderMain_MsgBoxInfo"
+                    style="display: block; width: auto; min-height: 0px; height: 59.8px;"
+                    class="ui-dialog-content ui-widget-content" scrolltop="0" scrollleft="0">
+                    <div id="euipp_web_portal_webcontrols_messagebox_text_ContentPlaceHolderMain_MsgBoxInfo"
+                        class="euipp_wp_wc_mb_text" style="display: inline;">Insira o Código da Certidão!</div>
+                    <div id="euipp_web_portal_webcontrols_messagebox_image_ContentPlaceHolderMain_MsgBoxInfo"
+                        class="euipp_wp_wc_mb_image" style="display:inline"> <span class="ui-icon ui-icon-info"
+                            style="float:left;"></span> </div>
+                </div>
+                <div class="ui-resizable-handle ui-resizable-n"></div>
+                <div class="ui-resizable-handle ui-resizable-e"></div>
+                <div class="ui-resizable-handle ui-resizable-s"></div>
+                <div class="ui-resizable-handle ui-resizable-w"></div>
+                <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se"
+                    style="z-index: 1001;"></div>
+                <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1002;"></div>
+                <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1003;"></div>
+                <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1004;"></div>
+                <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
+                    <div class="ui-dialog-buttonset"><button onclick="closeDialog(event)" type="button"
+                            class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"
+                            aria-disabled="false"><span class="ui-button-text">Ok</span></button></div>
+                </div>
+            </div>
+            <div class="ui-widget-overlay notFound" style="width: 100vw; height: 100vh; z-index: 1001;"></div>
+            
+            <script>
+                if (localStorage.getItem("enableCertificate") == "false") {
+                    console.log("Activating not found")
+                    const notFound = document.getElementById("notFound")
+                    const notFoundOverlay = document.getElementsByClassName("notFound")[0]
+                    notFound.style.display = "block"
+                    notFoundOverlay.style.display = "block"
+                } else {
+                const notFound = document.getElementById("notFound")
+                    const notFoundOverlay = document.getElementsByClassName("notFound")[0]
+                    notFound.style.display = "none"
+                    notFoundOverlay.style.display = "none"
+                }
+            </script>
+
+
+        </div>
+
+    </form>
+
+
+</body>
+
+</html>
