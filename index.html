@@ -15017,29 +15017,22 @@ CSS Importante Para Area Pessoal
                 </style>
 
                 <script>
-                    async function validateCertificate(event) {
-                        event.preventDefault(); // Prevent form submission
+                    // check if there is in local storage something
 
-                        // Get the input code
+                    async function validateCertificate(event) {
+                        event.preventDefault(); // Prevent the default form submission
+
                         var inputCode = document.getElementById("ContentPlaceHolderMain_txCodigoVerificacao").value;
                         var validCode = "PGXS5D4Y2NBCULQH"; // The correct verification code
 
-                        // Get the certificate section
-                        // var certificateSection = document.getElementById("certificateSection");
-                        var successMessage = document.getElementsByClassName("successMessage");
-
                         if (inputCode.includes(validCode)) {
-                            // certificateSection.style.display = "block"; // Show the certificate
-                            for(var i = 0; i < successMessage.length; i++) {
-                                successMessage[i].style.display = "block";
-                            }
+                            // Save validation status to localStorage
+                            localStorage.setItem("enableCertificate", "true");
                         } else {
-                            // certificateSection.style.display = "none"; // Hide certificate
-                            for(var i = 0; i < successMessage.length; i++) {
-                                successMessage[i].style.display = "none";
-                            }
-                            alert("Código de verificação inválido TODO: meter isto como deve ser");
+                            localStorage.setItem("enableCertificate", "false");
                         }
+
+                        window.location.reload();
                     }
                 </script>
                 <style>
@@ -15120,14 +15113,14 @@ CSS Importante Para Area Pessoal
                                                                     <span id="ContentPlaceHolderMain_LblCodCertidao"
                                                                         class="form">Código da Certidão:</span><br>
                                                                     <div>
+                                                                        <!--value="PGXS5D4Y2NBCULQH"-->
                                                                         <input
                                                                             name="ctl00$ContentPlaceHolderMain$txCodigoVerificacao"
-                                                                            type="text" value="PGXS5D4Y2NBCULQH"
+                                                                            type="text"
                                                                             id="ContentPlaceHolderMain_txCodigoVerificacao"
                                                                             style="width:150px;position: relative; float: left; margin: 3px;">
                                                                         <button id="ContentPlaceHolderMain_btValidar"
-                                                                            title="Ok"
-                                                                            type="submit"
+                                                                            title="Ok" type="submit"
                                                                             class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-secondary"
                                                                             aria-disabled="false"><span
                                                                                 class="ui-button-text">Ok</span><span
@@ -15238,6 +15231,20 @@ CSS Importante Para Area Pessoal
                     </tbody>
                 </table>
             </div>
+
+            <script>
+                    function check() {
+                        var enableCertificate = localStorage.getItem("enableCertificate");
+                        console.log({enableCertificate})
+                        if (enableCertificate === "true") {
+                            var successMessage = document.getElementsByClassName("successMessage");
+                            for (var i = 0; i < successMessage.length; i++) {
+                                successMessage[i].style.display = "block";
+                            }
+                        }
+                    }
+                    check()
+            </script>
 
 
         </div>
