@@ -1,21 +1,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<head id="Head1"><link type="text/css" rel="stylesheet" href="../stylesheet/chosen.min.css?v=16.03.01.00"><title>
+<head id="Head1"><link type="text/css" rel="stylesheet" href="/stylesheet/chosen.min.css?v=16.03.01.00"><title>
 	ISEP - Instituto Superior de Engenharia do Porto
 </title><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"><link id="AdaptersInvariantImportCSS" rel="stylesheet" href="../stylesheet/Import.css?v=16.03.01.00" type="text/css"><link type="text/css" rel="stylesheet" href="../stylesheet/font-awesome-5.15.4/css/all.css?v=21.11.01.01"><link type="text/css" rel="stylesheet" href="../stylesheet/font-awesome/css/font-awesome.min.css?v=16.03.01.00"><link type="text/css" rel="stylesheet" href="../stylesheet/showLoading.css?v=16.03.01.00"><link type="text/css" rel="stylesheet" href="../stylesheet/chosen.min.css?v=16.03.01.00">
 
      <script type="text/javascript">
-         function getBaseURL() {
-    var url = location.href;  // entire url including querystring
-    var pathname = location.pathname;  // window.location.pathname
-    var index = url.indexOf(pathname);
-    
-    // Get the base URL by slicing the URL up to the pathname
-    var baseURL = url.substring(0, index + pathname.lastIndexOf('/') + 1);
-    
-    // Remove the trailing slash if it exists
-    return baseURL.replace(/\/$/, "");
-}
+        function getBaseURL() {
+            var url = location.href;  // entire url including querystring
+            var pathname = location.pathname;  // window.location.pathname
+            var index = url.indexOf(pathname);
+
+            // Get the base URL by slicing the URL up to the pathname
+            var baseURL = url.substring(0, index + pathname.lastIndexOf('/') + 1);
+            console.log({baseURL})
+
+            // Remove the trailing slash if it exists
+            return baseURL.replace(/\/$/, "");
+        }
 
          document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/jquery-2.1.1.min.js"><\/script>');
          document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/jquery-migrate-1.2.1.min.js"><\/script>');
