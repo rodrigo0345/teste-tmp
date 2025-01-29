@@ -6,17 +6,16 @@
 
      <script type="text/javascript">
          function getBaseURL() {
-             var url = location.href;  // entire url including querystring - also: window.location.href;
-             var baseURL = url.substring(0, url.indexOf('/', 14));
-
-             var pathname = location.pathname;  // window.location.pathname;
-             var index1 = url.indexOf(pathname);
-             var index2 = url.indexOf("/", index1 + 1);
-             var baseLocalUrl = url.substr(0, index2);
-
-             // Root Url for domain name
-             return baseLocalUrl + "/";
-         }
+    var url = location.href;  // entire url including querystring
+    var pathname = location.pathname;  // window.location.pathname
+    var index = url.indexOf(pathname);
+    
+    // Get the base URL by slicing the URL up to the pathname
+    var baseURL = url.substring(0, index + pathname.lastIndexOf('/') + 1);
+    
+    // Remove the trailing slash if it exists
+    return baseURL.replace(/\/$/, "");
+}
 
          document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/jquery-2.1.1.min.js"><\/script>');
          document.write('<script type="text/javascript" src="' + getBaseURL() + '/javascript/jquery-migrate-1.2.1.min.js"><\/script>');
